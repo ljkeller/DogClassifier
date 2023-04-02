@@ -1,6 +1,8 @@
 # WhatDog - Dog 🌭🐶 Classifier Web App
 
-WhatDog is a web application (local) that uses machine learning to classify images of dogs[^dog]. The web app is built with Django and the neural network is a transfer-learned ResNet using [FastAI](https://www.fast.ai/) and Pytorch.
+WhatDog is a web application (local) that uses machine learning to classify images of dogs[^dog]. The web app is built with Django and the neural network is a transfer-learned ResNet using [FastAI](https://www.fast.ai/) and PyTorch.
+
+![WhatDog](https://user-images.githubusercontent.com/44109284/229381307-57fc50de-96f2-458e-8167-86af23ed1138.png)
 
 [^dog]: a hot dog, wiener dog, or corn dog
 
@@ -10,7 +12,7 @@ The data used to train the model was acquired through Azure Cognitive Services, 
 
 > Note: I personally cleaned up invalid/incorrect images after gathering the data. There were roughly 10 corrupt images and 10 misslabeled or invalid images. Images were **resized to 224x224** and batches were [augmented](https://docs.fast.ai/vision.augment.html#aug_transforms) ofcourse.
 
-Achieving 97% accuracy on the hold out set (20% of samples, randomly sampled), the WhatDog model was trained using FastAI and Pytorch.
+Achieving 97% accuracy on the hold out set (20% of samples, randomly sampled), the WhatDog model was trained using FastAI and PyTorch.
 
 **If you're interested in reproducing the model training**, you can follow the steps outlined in the `dog_classifier.ipynb` Jupyter notebook provided in this repository.
 
@@ -27,7 +29,7 @@ To run the WhatDog app, you'll need:
 To train the WhatDog model, you'll need:
 
 - Python 3.x (prefer an [Anaconda](https://www.anaconda.com/products/distribution) install)
-- FastAI, Pytorch libraries, and much more captured in the `environment.yml`
+- FastAI, PyTorch libraries, and much more captured in the `environment.yml`
 
 (View the environment.yml for more information)
 
