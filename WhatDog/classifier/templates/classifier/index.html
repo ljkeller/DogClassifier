@@ -2,39 +2,25 @@
 <html>
     <head>
         <title>Classifier</title>
-        <script>
-
-            //  This function communicates with django (backend)
-            function showSection(section) {   
-                fetch(`/sections/${section}`)
-                .then(response => response.text())
-                .then(text => {
-                    console.log(text);
-                    document.querySelector('#content').innerHTML = text;
-                });
-
-            }
-            document.addEventListener("DOMContentLoaded", function() {
-                document.querySelectorAll('button').forEach(button => {
-                    button.onclick = function() {
-                        showSection(this.dataset.section)
-                    }
-                })
-            });
-
-
-        </script>
     </head>
     <body>
         <h1>WhatDog?</h1>
-        <button data-section="1">Hot Dog</button>
-        <button data-section="2">Wiener Dog</button>
-        <button data-section="3">Cord Dog</button>
+        <h2>Upload a file and I'll use a neural network to tell you what type of dog* it is!</h2>
+        <p>A dog* is from the set {corn dog, wiener dog, hot dog}. These are the only dogs my model knows</p>
 
-        <!-- Contents loaded from server is inserted here by javascript -->
-        <div id="content">
+        {% if prediction_label and prediction_prob %}
+            <p>{{ prediction_label }}, {{ prediction_prob }}%</p>
+            {% if img_url %}
+                <img src="{{ img_url }}" alt="Uploaded Image" style="max-width: 500px;">
+            {% endif %}
+        {% endif %}
 
         </div>
-    
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="image">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>
