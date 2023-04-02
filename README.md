@@ -1,8 +1,9 @@
-# WhatDog - Dog 🌭🐶 Classifier Web App
+# WhatDog - Dog (🌭 and 🐶) Classifier Web App
 
 WhatDog is a web application (local) that uses machine learning to classify images of dogs[^dog]. The web app is built with Django and the neural network is a transfer-learned ResNet using [FastAI](https://www.fast.ai/) and PyTorch.
 
-![WhatDog](https://user-images.githubusercontent.com/44109284/229381307-57fc50de-96f2-458e-8167-86af23ed1138.png)
+![WhatDogDemo](https://user-images.githubusercontent.com/44109284/229383490-8daf3bc3-e948-4448-8251-c5a960222a45.png)
+> My dogs Sunny and Rui; model prediction correct
 
 [^dog]: a hot dog, wiener dog, or corn dog
 
@@ -15,6 +16,10 @@ The data used to train the model was acquired through Azure Cognitive Services, 
 Achieving 97% accuracy on the hold out set (20% of samples, randomly sampled), the WhatDog model was trained using FastAI and PyTorch.
 
 **If you're interested in reproducing the model training**, you can follow the steps outlined in the `dog_classifier.ipynb` Jupyter notebook provided in this repository.
+
+## Sample Batch
+![batch_WhatDog](https://user-images.githubusercontent.com/44109284/229383526-7c36ccd6-5112-4987-9fc2-0784d8312b82.png)
+
 
 ## Getting Started
 
