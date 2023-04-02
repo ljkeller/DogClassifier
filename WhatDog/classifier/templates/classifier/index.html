@@ -6,10 +6,10 @@
     <body>
         <h1>WhatDog?</h1>
         <h2>Upload a file and I'll use a neural network to tell you what type of dog* it is!</h2>
-        <p>A dog* is from the set {corn dog, wiener dog, hot dog}. These are the only dogs my model knows</p>
+        <p>A dog* is from the set <b>{hot dog, wiener dog, corn dog}</b>. These are the only dogs my model knows</p>
 
         {% if prediction_label and prediction_prob %}
-            <p>{{ prediction_label }}, {{ prediction_prob }}%</p>
+            <p><b>Class: {{prediction_label}}, {{prediction_prob}}%</b></p>
             {% if img_url %}
                 <img src="{{ img_url }}" alt="Uploaded Image" style="max-width: 500px;">
             {% endif %}
