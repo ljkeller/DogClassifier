@@ -10,6 +10,7 @@ __pycache__/
 dogs/
 images/
 *.pkl
+WhatDog/media
 
 # Distribution / packaging
 .Python

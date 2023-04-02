@@ -16,5 +16,5 @@ Overall project scope captured below:
 5. ~~Clean~~
 6. ~~Retrain~~
 7. ~~Test~~
-8. Make simply Python GUI
-9. 'Deploy'?
+8. ~~Make simply Python GUI~~
+9. 'Deploy'? Probably prefer to host locally for security reasons
