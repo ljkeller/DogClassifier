@@ -9,6 +9,7 @@ __pycache__/
 # data
 dogs/
 images/
+*.pkl
 
 # Distribution / packaging
 .Python

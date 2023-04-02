@@ -9,12 +9,12 @@ I will be approaching this project with the drivetrain approach.
 
 ## TODO
 Overall project scope captured below:
-1. Get data
-2. Clean data
-3. Setup data pipeline
-4. Train
-5. Clean
-6. Retrain
-7. Test
+1. ~~Get data~~
+2. ~~Clean data~~
+3. ~~Setup data pipeline~~
+4. ~~Train~~
+5. ~~Clean~~
+6. ~~Retrain~~
+7. ~~Test~~
 8. Make simply Python GUI
-9. 'Deploy'
+9. 'Deploy'?
